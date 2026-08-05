@@ -1,0 +1,130 @@
+body,
+html {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  display: grid;
+  grid-template-rows: 13% 1fr 5%;
+}
+
+header {
+  grid-row: 1;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.2%;
+  padding-left: 1%;
+  padding-right: 1%;
+  border-bottom: 1px solid black;
+}
+
+header img {
+  width: auto;
+  height: 90%;
+}
+
+header > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-direction: row;
+  padding-left: 1.5%;
+  padding-right: 1.5%;
+  border-radius: 20px;
+  border: 1px solid black;
+}
+
+#status-signal.offline {
+  background-color: rgb(53,52,52);
+}
+
+#status-signal.online {
+  background-color: rgb(33, 189, 33);
+}
+
+p.offline {
+  color: rgb(53, 52, 52);
+}
+
+p.online {
+  color: rgb(33, 189, 33);
+}
+
+#status-signal {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: rgb(7, 7, 7);
+}
+
+main {
+  grid-row: 2;
+  display: grid;
+  grid-template-rows: 35% 1fr;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-row: 3;
+  border-top: 0.5px solid black;
+}
+
+#controles{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+    padding: 1%;
+    grid-row: 1;
+}
+
+#controles>button{
+    width: 10%;
+    height: 70%;
+    border-radius: 7px;
+    font-size: 350%;
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+#controles>button:first-child{
+    border: 0.3px solid rgba(77, 216, 77, 0.8);
+}
+#controles>button:last-child{
+    border: 0.3px solid rgba(241, 20, 20, 0.8);
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.arimo {
+  font-family: "Arimo", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+}
